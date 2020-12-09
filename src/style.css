@@ -10,6 +10,7 @@ ul .lis {
   padding: 10px 20px;
   margin: 4px;
   transition: 0.5s;
+  display: inline-block;
 }
 .lis:hover {
   color: aliceblue;
@@ -18,4 +19,11 @@ ul .lis {
 .help {
   color: grey;
   background-color: red;
+}
+
+@media screen and (max-width: 450px) {
+  ul .lis {
+    display: block;
+    text-align: center;
+  }
 }
